@@ -2,10 +2,26 @@ package addressBook;
 
 import java.util.Scanner;
 
-class ContactPerson {
+class AddingAddressBook {
 
 	private String firstName, lastName, city, state;
 	private long phoneNumber, zip;
+
+	public void addAddressBook() {
+
+		System.out.println("Adding Contact Details of Contact1 Person");
+		addContact();
+		System.out.println("Displaying Contact Details of Contact1 Person");
+		printContact();
+
+		System.out.println();
+		System.out.println("Deleting Contact Details of Contact1 Person");
+		deleteContact();
+		System.out.println("Displaying deleted Contact Details of Contact1 Person");
+		printContact();
+		System.out.println();
+
+	}
 
 	public void addContact() {
 		Scanner s = new Scanner(System.in);
@@ -54,34 +70,21 @@ public class AddressBook {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Address Book Program");
 
-		System.out.println();
-		ContactPerson contact1 = new ContactPerson();
-		ContactPerson contact2 = new ContactPerson();
-		ContactPerson editContact1 = new ContactPerson();
-		ContactPerson deleteContact1 = new ContactPerson();
-
-		System.out.println("Adding Contact Details of Contact1 Person");
-		contact1.addContact();
-		System.out.println("Printing Contact Details of Contact1 Person");
-		contact1.printContact();
+		AddingAddressBook addressBook1 = new AddingAddressBook();
+		AddingAddressBook addressBook2 = new AddingAddressBook();
+		AddingAddressBook addressBook3 = new AddingAddressBook();
 
 		System.out.println();
-		System.out.println("Adding Contact Details of Contact2 Person");
-		contact2.addContact();
-		System.out.println("Printing Contact Details of Contact1 Person");
-		contact2.printContact();
+		System.out.println("Displaying contact details of ADDRESS BOOK1");
+		addressBook1.addAddressBook();
 
 		System.out.println();
-		System.out.println("Editing Contact Details of Contact1 Person");
-		editContact1.addContact();
-		System.out.println("Displaying edited Contact Details of Contact1 Person");
-		editContact1.printContact();
+		System.out.println("Displaying contact details of ADDRESS BOOK2");
+		addressBook2.addAddressBook();
 
 		System.out.println();
-		System.out.println("Deleting Contact Details of Contact1 Person");
-		deleteContact1.deleteContact();
-		System.out.println("Displaying Deleted Contact Details of Contact1 Person");
-		deleteContact1.printContact();
+		System.out.println("Displaying contact details of ADDRESS BOOK3");
+		addressBook3.addAddressBook();
 
 	}
 
