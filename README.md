@@ -1,5 +1,5 @@
 # Day10_AddressBook
-Uc1 :- Ability to create a Contacts in AddressBook with first and last names, address,city, state, zip, phone number and email...
+Uc1 :- Ability to create a Contacts in AddressBook with first and last names, address,city, state, zip, phone number and email....
 
 Uc2 :- Ability to add a new Contact to Address Book
 
