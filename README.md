@@ -14,3 +14,14 @@ Uc3 :- Ability to edit existing contact person using their name
 Uc4 :- Ability to delete a person using person's name
 
   - Use Console to delete a person   
+
+Uc5 :- Ability to add multiple person to Address Book
+- Use Console to add person details one at a time
+
+- Use Collection Class to maintain multiple contact persons in Address Book
+
+Uc6 :- Refactor to add multiple Address Book to the System. Each Address Book has a unique Name 
+
+- Use Console to add new Address Book 
+
+- Maintain Dictionary of Address Book Name to Address Book
