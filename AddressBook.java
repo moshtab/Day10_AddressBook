@@ -27,8 +27,6 @@ class ContactPerson {
 		System.out.println("Enter the Zip");
 		zip = s.nextLong();
 
-		s.close();
-
 	}
 
 	public void printContact() {
@@ -46,11 +44,20 @@ public class AddressBook {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Address Book Program");
-		ContactPerson myobj = new ContactPerson();
-		System.out.println("Adding contact details of Contact Person1");
-		myobj.addContact();
-		System.out.println("Displaying the contact details of Contact Person1");
-		myobj.printContact();
+
+		ContactPerson contact1 = new ContactPerson();
+		ContactPerson contact2 = new ContactPerson();
+
+		System.out.println("Adding Contact Details of Contact1 Person");
+		contact1.addContact();
+		System.out.println("Printing Contact Details of Contact1 Person");
+		contact1.printContact();
+		
+        System.out.println();
+		System.out.println("Adding Contact Details of Contact2 Person");
+		contact2.addContact();
+		System.out.println("Printing Contact Details of Contact1 Person");
+		contact2.printContact();
 
 	}
 
